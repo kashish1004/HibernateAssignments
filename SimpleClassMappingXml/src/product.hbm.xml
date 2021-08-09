@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.hibernate.org/xsd/hibernate-mapping hibernate-mapping-4.0.xsd ">
+	<class name="com.phoenix.entities.Product" table="products">
+		<id name="productId" column="id">
+			<generator class="assigned"></generator>
+		</id>
+		<property name="productName" column = "name"></property>
+		<property name="brand"></property><!-- if column name and variable name are same no need to specify column attribute-->
+		<property name="price"></property>
+	</class>
+</hibernate-mapping>
